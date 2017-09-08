@@ -4,9 +4,10 @@ var UnminifiedWebpackPlugin = require('unminified-webpack-plugin')
 
 module.exports = {
   entry: {
-    index: './browser.js'
+    index: './index.js'
   },
   output: {
+    library: 'generatePayload',
     path: path.resolve(__dirname, 'dist'),
     filename: 'promptypay-browser.min.js'
   },
